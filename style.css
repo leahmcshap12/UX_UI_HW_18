@@ -31,7 +31,7 @@ ul {
 
 footer {
     background-color: 373738;
-    padding: 50%;
+    padding: 0%;
 }
 
 footer.ul {
@@ -47,8 +47,31 @@ footer.ul {
     flex-direction: row;
 }
 
-.flexContainer.div {
+.flexContainer div {
     width: 33%;
-    padding: 1%;
-    margin: 5px;
+    margin: 50px;
+}
+
+/* My Work section coded using CSS */
+
+.workGrid {
+    display: grid;
+    grid-template-areas: 'area area';
+}
+
+/* My media query coded using CSS */
+
+@media only screen and (max-width: 600){
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexContainer div {
+        width: 100%;
+    }
+
+    .workGrid {
+        grid-template-areas: 1fr;
+    }
 }
